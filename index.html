@@ -5,25 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cash Register</title>
+    <link rel="stylesheet" href="style.css"></link>
 </head>
 <body>
     <header>
         <h2>Cash Register Manager</h2>
     </header>
     <section>
-        <p>Enter the bill amount and cash given by the customer and know minimum number of notes to return.</p>
+        <p class="description">Enter the bill amount and cash given by the customer and know minimum number of notes to return.</p>
         <div>
-            <h3>Bill Amount:</h3>
-            <input type="text" class="bill-amount"/>
-            
-            <h3>Cash Given:</h3>
-            <input type="text" class="cash-given"/>
+            <div>
+                <h3>Bill Amount:</h3>
+                <input type="text" class="bill-amount"/>
+                <br/>
+                <button class="cash-given-btn">Add Cash Given</button>
+            </div>
 
-            <button class="check-button">Check</button>
-            <p class="error-msg">Invalid Bil Amount</p>
+            <div class="cash-given-section">
+                <h3>Cash Given:</h3>
+                <input type="text" class="cash-given"/>  
+                <br/>         
+                <button class="check-button">Check</button>
+                <p class="error-msg"></p>
+            </div>
         </div>
 
-        <div>
+        <div class="display-change">
             <h3>Return Change</h3>
             <table>
                 <tr>
@@ -49,6 +56,14 @@
             </table>
         </div>
     </section>
+    <footer>
+        <p>Made by Mainak</p>
+        <ul>
+            <li><a href='https://github.com/the-mainak-banerjee'>Github</a></li>
+            <li> <a href='linkedIn.com/in/themainakb/'>LinkedIn</a></li>
+            <li><a href='https://twitter.com/themainakb'> Twitter </a></li>
+        </ul>
+    </footer>
 
 
     <script type="text/javascript" src="script.js"></script>

@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    padding: 20px 20px;
+    text-align: center;
+    background-color: #49a0eb;
+    color: white;
+}
+
+section{
+    text-align: center;
+    margin: 20px 10px;
+    height: 70vh;
+}
+
+.description{
+    margin: 30px 0px;
+    font-size: 1.3rem;
+}
+
+.bill-amount, .cash-given{
+    margin: 18px 0px 25px;
+    padding: 5px 20px;
+    border: 2px solid #49a0eb;
+    border-radius: 8px;
+}
+
+.cash-given-section{
+    display: none;
+}
+
+button{
+    padding: 5px 40px;
+    border: none;
+    background-color: #49a0eb;
+    color: white;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+.display-change{
+    margin: 30px 0px;
+}
+
+table{
+    border-collapse: collapse;
+    padding: 1rem;
+    margin: 1rem auto;
+    text-align: center;
+    
+}
+
+td,th{
+    border: 1px solid #49a0eb;
+    padding: 1rem;
+}
+
+footer{
+    background-color: #49A0EB;
+    padding: 30px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+footer>ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+footer>ul>li {
+    padding: 20px;
+}
