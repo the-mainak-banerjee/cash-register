@@ -40,6 +40,7 @@ button{
     color: white;
     font-size: 18px;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .error-msg{
