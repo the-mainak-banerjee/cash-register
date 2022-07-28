@@ -24,9 +24,11 @@ section{
 
 .bill-amount, .cash-given{
     margin: 18px 0px 25px;
-    padding: 5px 20px;
+    padding: 10px;
     border: 2px solid #49a0eb;
     border-radius: 8px;
+    width: 30%;
+    font-size: 20px;
 }
 
 .cash-given-section{
