@@ -5,6 +5,8 @@ const errorMsg = document.querySelector('.error-msg')
 const notesNumber = document.querySelectorAll('.notes-number')
 const cashGivenBtn = document.querySelector('.cash-given-btn')
 const cashGivenSec = document.querySelector('.cash-given-section')
+const displayChangeSec = document.querySelector('.display-change')
+const returnedAmountSec = document.querySelector('#returned-amount')
 
 const availableNotes = [2000,500,100,20,10,5,1]
 
@@ -26,6 +28,7 @@ checkBtn.addEventListener('click', ()=> {
     
         if(amountLeft > 0) {
             calculateCash(amountLeft)
+            returnedAmountSec.innerText = amountLeft
         }
     
         if(amountLeft < 0){
@@ -38,6 +41,7 @@ checkBtn.addEventListener('click', ()=> {
 })
 
 function calculateCash(amount) {
+    displayChangeSec.style.display = 'block'
     for(i=0; i<availableNotes.length; i++){
         const numberOfNotes = Math.trunc(amount / availableNotes[i])
         amount %= availableNotes[i]
