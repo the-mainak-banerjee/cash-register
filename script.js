@@ -13,17 +13,23 @@ const availableNotes = [2000,500,100,20,10,5,1]
 hideMessage()
 
 cashGivenBtn.addEventListener('click', () => {
-    cashGivenSec.style.display = 'block'
-    cashGivenBtn.style.display= 'none'
+    hideMessage()
+    if(billAmount.value){
+        cashGivenSec.style.display = 'block'
+        cashGivenBtn.style.display= 'none'
+    }else{
+        showError('Please Add the bill amount.')
+    }
 })
 
 checkBtn.addEventListener('click', ()=> {
     hideMessage()
+    displayChangeSec.style.display = 'none'
     const amountLeft = cashGiven.value - billAmount.value
 
     if(billAmount.value > 0){
         if(amountLeft === 0) {
-            showError("Don't need to return anything")
+            showError("Don't need to return anything.")
         }
     
         if(amountLeft > 0) {
@@ -32,10 +38,10 @@ checkBtn.addEventListener('click', ()=> {
         }
     
         if(amountLeft < 0){
-            showError('Do you want to wash dishes')
+            showError('Do you want to wash dishes??')
         }
     }else{
-        showError('Invalid Bill Amount')
+        showError('Invalid Bill Amount!!')
 
     }
 })
